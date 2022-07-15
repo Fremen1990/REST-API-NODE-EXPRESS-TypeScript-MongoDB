@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=KgnJNJk9-to
+
+
+
+https://www.youtube.com/watch?v=BWUi6BS9T5Y&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx    Build a REST API with Node.js, Express, TypeScript, MongoDB & Zod
+
+https://www.youtube.com/watch?v=r5L1XRZaCR0&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx&index=3    Module '"mongoose"' has no exported member 'DocumentDefinition'.ts
+
+https://www.youtube.com/watch?v=oSz23pPBpFY&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx&index=4   Testing Express REST API With Jest & Supertest
+
+https://www.youtube.com/watch?v=Qt3KJZ2kQk0&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx&index=5  Login and Registration User Interface in React.js
+
+https://www.youtube.com/watch?v=HMQ-h3riqYU&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx&index=6    Google OAuth 2.0 
+
+https://www.youtube.com/watch?v=5aryMKiBEKY&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx&index=7  PROMETHEUS METRICS
+
+https://www.youtube.com/watch?v=6TM9ds1fsug&list=PL0iFifR5umclpRsRgWQtOtcgUffblcZgx&index=8  Docker-ize & Deploy Node.js Applications with Caddy on DigitalOcean
