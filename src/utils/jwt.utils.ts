@@ -11,7 +11,8 @@ return jwt.sign(object, privateKey, {
 })
 }
 
-function verifyJwt(token:string){
+export function verifyJwt(token:string){
+    console.log("TOKEN", token)
 try{
     const decoded = jwt.verify(token, publicKey)
     return{
