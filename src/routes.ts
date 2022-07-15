@@ -1,28 +1,28 @@
 import { Express, Request, Response } from "express";
-import { createUserHandler } from "./controller/user.controller";
-import validateResource from "./middleware/validateResource";
-import { createUserSchema } from "./schema/user.schema";
-import {
-  createUserSessionHandler,
-  deleteSessionHandler,
-  getUserSessionsHandler,
-} from "./controller/session.controller";
-import { createSessionSchema } from "./schema/session.schema";
-import requireUser from "./middleware/requireUser";
 import {
   createProductHandler,
-  deleteProductHandler,
   getProductHandler,
   updateProductHandler,
+  deleteProductHandler,
 } from "./controller/product.controller";
+import {
+  createUserSessionHandler,
+  getUserSessionsHandler,
+  deleteSessionHandler,
+} from "./controller/session.controller";
+import { createUserHandler } from "./controller/user.controller";
+import requireUser from "./middleware/requireUser";
+import validateResource from "./middleware/validateResource";
 import {
   createProductSchema,
   deleteProductSchema,
   getProductSchema,
   updateProductSchema,
 } from "./schema/product.schema";
+import { createSessionSchema } from "./schema/session.schema";
+import { createUserSchema } from "./schema/user.schema";
 
-export default function routes(app: Express) {
+function routes(app: Express) {
   app.get("/healthcheck", (req: Request, res: Response) => res.sendStatus(200));
 
   app.post("/api/users", validateResource(createUserSchema), createUserHandler);
@@ -42,6 +42,7 @@ export default function routes(app: Express) {
     [requireUser, validateResource(createProductSchema)],
     createProductHandler
   );
+
   app.put(
     "/api/products/:productId",
     [requireUser, validateResource(updateProductSchema)],
@@ -60,3 +61,5 @@ export default function routes(app: Express) {
     deleteProductHandler
   );
 }
+
+export default routes;
